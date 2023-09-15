@@ -1,0 +1,18 @@
+$shaft-color: #333;
+$feather-color: #333;
+$transition-duration: 0.3s;
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  transition: transform $transition-duration ease;
+  transform-origin: center;
+
+  &.up {
+    transform: rotate(-90deg);
+  }
+
+  &.down {
+    transform: rotate(90deg);
+  }
+}

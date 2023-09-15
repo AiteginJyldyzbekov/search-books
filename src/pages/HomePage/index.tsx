@@ -1,5 +1,12 @@
+import SearchField from "../../components/molecules/search-field";
+import SearchBlock from "../../components/organisms/search-block";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <SearchBlock />
+    </>
+  );
 };
 
 export default HomePage;
