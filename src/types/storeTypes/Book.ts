@@ -31,6 +31,7 @@ export interface industryIdentifierType {
 }
 
 export interface volumeInfoTypes {
+  categories: string[] | undefined;
   allowAnonLogging: boolean;
   authors: Array<string>;
   canonicalVolumeLink: string;

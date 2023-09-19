@@ -31,21 +31,23 @@ const SearchBlock = () => {
 
   return (
     <div className={style.wrapper}>
-      <p>Search for books</p>
-      <SearchField placeholder="Search books" handleSearch={handleSearch} />
-      <div className={style.select__container}>
-        <Select
-          options={categoryData}
-          queryData="category"
-          label="Categories"
-          handleSearch={handleSearch}
-        />
-        <Select
-          options={sortingData}
-          queryData="sort"
-          label="Sorting by"
-          handleSearch={handleSearch}
-        />
+      <div className={style.wrapper__content}>
+        <p className={style.content__title}>Search for books</p>
+        <SearchField placeholder="Search books" handleSearch={handleSearch} />
+        <div className={style.select__container}>
+          <Select
+            options={categoryData}
+            queryData="category"
+            label="Categories"
+            handleSearch={handleSearch}
+          />
+          <Select
+            options={sortingData}
+            queryData="sort"
+            label="Sorting by"
+            handleSearch={handleSearch}
+          />
+        </div>
       </div>
     </div>
   );

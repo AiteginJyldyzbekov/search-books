@@ -1,7 +1,23 @@
 .wrapper {
-  .select__container {
-    width: 60%;
+  background-color: #9AFFF7;
+  width: 100%;
+  height: 40vh;
+  .wrapper__content {
+    width: 50%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 80%;
+    .select__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content__title {
+      font-size: 50px;
+      margin-top: 50px;
+      text-align: center;
+    }
   }
 }

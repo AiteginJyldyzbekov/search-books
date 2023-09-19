@@ -23,6 +23,7 @@ const bookSlice = createSlice({
     builder.addCase(fetchBooks.fulfilled, (state, action) => {
       state.isLoading = LoadingStatus.succeeded;
       state.books = action.payload;
+      console.log(state.books)
     });
     //After get error
     builder.addCase(fetchBooks.rejected, (state, action) => {
